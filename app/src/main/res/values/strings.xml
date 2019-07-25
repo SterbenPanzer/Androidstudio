@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AlgumasCoisas</string>
+    <string name="title_activity_principal">principal</string>
+    <string name="title_activity_calculoimc">calculoimc</string>
+    <string name="login">login</string>
+
+    <string-array name="tipo">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+</resources>
