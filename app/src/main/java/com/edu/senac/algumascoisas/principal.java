@@ -39,4 +39,9 @@ public class principal extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void converter( View v){
+        Intent i=new Intent(this,conversao.class);
+        startActivity(i);
+    }
+
 }

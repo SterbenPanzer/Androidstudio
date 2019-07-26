@@ -5,7 +5,9 @@
     <string name="login">login</string>
 
     <string-array name="tipo">
+        <item>KB</item>
         <item>MB</item>
         <item>GB</item>
+        <item>TB</item>
     </string-array>
 </resources>

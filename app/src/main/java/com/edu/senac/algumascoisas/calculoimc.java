@@ -37,6 +37,10 @@ public class calculoimc extends AppCompatActivity {
         editAltura=findViewById(R.id.editAltura);
     }
 
+    public void sair(View v){
+        finish();
+    }
+
     public void calcular(View v){
         String peso=editPeso.getText().toString(),altura=editAltura.getText().toString();
         Float pes = Float.parseFloat(peso), alt= Float.parseFloat(altura);
