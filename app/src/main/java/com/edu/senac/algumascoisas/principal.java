@@ -44,4 +44,14 @@ public class principal extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void sobre( View v){
+        Intent i=new Intent(this,Sobre.class);
+        startActivity(i);
+    }
+
+    public void listar( View v){
+        Intent i=new Intent(this,ListaDeProdutos.class);
+        startActivity(i);
+    }
+
 }

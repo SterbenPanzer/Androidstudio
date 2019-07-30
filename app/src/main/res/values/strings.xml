@@ -10,4 +10,10 @@
         <item>GB</item>
         <item>TB</item>
     </string-array>
+
+    <string-array name="tipoProduto">
+        <item>Comprado</item>
+        <item>Não Comprado</item>
+    </string-array>
+    <string name="title_activity_lista_de_produtos">ListaDeProdutos</string>
 </resources>

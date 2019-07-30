@@ -16,7 +16,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="135dp"
         android:orientation="horizontal">
 
         <Button
@@ -45,7 +45,44 @@
             android:onClick="converter"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:text="conversao"
+            android:text="conversor"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="170dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-black"
+            android:onClick="sobre"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Sobre"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="170dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-black"
+            android:onClick="listar"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Lista"
             android:textColor="#ffffff"
             android:textSize="24sp" />
     </LinearLayout>
