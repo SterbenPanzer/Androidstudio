@@ -1,10 +1,11 @@
-package com.edu.senac.algumascoisas;
+package com.edu.senac.algumascoisas.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.edu.senac.algumascoisas.R;
+import com.edu.senac.algumascoisas.ui.produto;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

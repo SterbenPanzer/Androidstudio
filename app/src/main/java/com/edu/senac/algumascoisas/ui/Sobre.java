@@ -1,4 +1,4 @@
-package com.edu.senac.algumascoisas;
+package com.edu.senac.algumascoisas.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -12,25 +12,21 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Spinner;
+
+import com.edu.senac.algumascoisas.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class produto extends AppCompatActivity {
-
+public class Sobre extends AppCompatActivity {
     ImageView imagem;
-    Spinner spinnerConvert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_produto);
+        setContentView(R.layout.activity_sobre);
 
-        spinnerConvert = findViewById(R.id.spinnerConvert);
         imagem=findViewById(R.id.imagem);
-
-
     }
 
     public void tirarFoto(View v){

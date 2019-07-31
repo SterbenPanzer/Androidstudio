@@ -1,4 +1,4 @@
-package com.edu.senac.algumascoisas;
+package com.edu.senac.algumascoisas.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.edu.senac.algumascoisas.R;
+import com.edu.senac.algumascoisas.model.Usuario;
+import com.edu.senac.algumascoisas.ui.principal;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,10 +58,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void irParaprincipal(View v){
+
+        Usuario usuario = new Usuario();
+        usuario.setCodigo(1);
+        usuario.setEmail("felipe@gmail.com");
+        usuario.setSenha("senha");
+
         String email=editEmail.getText().toString();
         String senha=editSenha.getText().toString();
-        if(email.equals("FelipeEduardo") && senha.equals("123")){
-            Intent i=new Intent(this,principal.class);
+
+
+
+        if(email.equals(usuario.getEmail()) && senha.equals(usuario.getSenha())){
+            Intent i=new Intent(this, principal.class);
             startActivity(i);
         }else{
             Toast.makeText( this,  "Usuario incorreto" , Toast.LENGTH_SHORT).show();

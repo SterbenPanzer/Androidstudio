@@ -1,4 +1,4 @@
-package com.edu.senac.algumascoisas;
+package com.edu.senac.algumascoisas.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.edu.senac.algumascoisas.R;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
