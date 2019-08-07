@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.cadastroAnime"></activity>
-        <activity android:name=".ui.Anime" />
+        <activity android:name=".ui.AnimeDados" />
         <activity android:name=".ui.CadastroProduto" />
         <activity
             android:name=".ui.ListaDeProdutos"

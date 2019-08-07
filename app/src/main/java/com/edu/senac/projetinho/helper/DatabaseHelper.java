@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.util.Log;
 
+import com.edu.senac.projetinho.model.Anime;
 import com.edu.senac.projetinho.model.Produto;
 import com.edu.senac.projetinho.model.Usuario;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
@@ -25,7 +26,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     private Dao<Usuario, Integer> usuarioDao = null;
     private Dao<Produto, Integer> produtoDao = null;
-
+    private Dao<Anime, Integer> animeDao = null;
     public DatabaseHelper(Context context) {
         super(context, NOME_BANCO, null, VERSAO);
     }
@@ -35,6 +36,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         try {
             TableUtils.createTable(connectionSource, Usuario.class);
             TableUtils.createTable(connectionSource, Produto.class);
+            TableUtils.createTable(connectionSource, Anime.class);
 
             Usuario usuario = new Usuario();
             usuario.setEmail("aluno");
@@ -53,6 +55,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         try {
             TableUtils.dropTable(connectionSource, Usuario.class, true);
             TableUtils.dropTable(connectionSource, Produto.class, true);
+            TableUtils.dropTable(connectionSource, Anime.class, true);
             onCreate(sqLiteDatabase, connectionSource);
         } catch (Exception e) {
             Log.e("banco", "Erro ao criar banco");
@@ -116,5 +119,21 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             Log.e("banco", "Falha ao buscar produtos");
         }
         return new ArrayList<>();
+    }
+
+    public Dao<Anime, Integer> getAnimeDao() throws SQLException {
+        if (animeDao == null) {
+            animeDao = getDao(Anime.class);
+        }
+        return animeDao;
+    }
+
+    public void salvarAnime(Anime anime) {
+        try {
+            int id = getAnimeDao().create(anime);
+            Log.d("banco", "Total :" + getAnimeDao().countOf());
+        } catch (Exception e) {
+            Log.e("banco", "Falha ao salvar anime");
+        }
     }
 }

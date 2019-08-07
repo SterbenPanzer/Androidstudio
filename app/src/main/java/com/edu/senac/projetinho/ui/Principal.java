@@ -50,4 +50,9 @@ public class Principal extends AppCompatActivity {
         Intent i = new Intent(this, ListaDeProdutos.class);
         startActivity(i);
     }
+
+    public void irParaCadastroAnime(View v) {
+        Intent i = new Intent(this, cadastroAnime.class);
+        startActivity(i);
+    }
 }

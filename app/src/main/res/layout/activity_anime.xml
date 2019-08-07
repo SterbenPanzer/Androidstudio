@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.edu.senac.projetinho.ui.Anime">
+    tools:context="com.edu.senac.projetinho.ui.AnimeDados">
 
     <TextView
         android:id="@+id/nomeAnimeView"
