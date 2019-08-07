@@ -4,42 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="20dp"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
+    android:baselineAligned="false"
     android:orientation="vertical"
+    android:layout_margin="25dp"
     tools:context=".ui.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="161dp"
+        android:layout_height="196dp"
         android:paddingTop="10dp"
-        app:srcCompat="@drawable/icon_logine" />
+        android:src="@drawable/ic_login" />
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:hint="@string/em"
+        android:inputType="textEmailAddress"
+        android:text="aluno"
+        tools:text="aluno@senac.br" />
 
     <EditText
-        android:id="@+id/editSenha"
+        android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Senha"
-        android:inputType="textPassword" />
+        android:hint="@string/sn"
+        android:inputType="textPassword"
+        android:text="123"
+        tools:text="senha" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="#008577"
+        android:onClick="irParaPrincipal"
+        android:text="@string/lg"
         android:textColor="#ffffff"
-        android:onClick="irParaprincipal"
-        android:text="Login" />
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="406dp" />
 
 </LinearLayout>

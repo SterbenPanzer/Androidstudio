@@ -1,4 +1,4 @@
-package com.edu.senac.algumascoisas.model;
+package com.edu.senac.projetinho.model;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
@@ -6,7 +6,7 @@ import com.j256.ormlite.table.DatabaseTable;
 import java.io.Serializable;
 
 @DatabaseTable
-public class Usuario  implements Serializable {
+public class Usuario implements Serializable {
     @DatabaseField(generatedId = true)
     private Integer codigo;
 

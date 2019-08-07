@@ -1,19 +1,37 @@
 <resources>
-    <string name="app_name">AlgumasCoisas</string>
-    <string name="title_activity_principal">principal</string>
-    <string name="title_activity_calculoimc">calculoimc</string>
-    <string name="login">login</string>
-
+    <string name="app_name">Project</string>
+    <string name="title_activity_principal">Main</string>
+    <string name="title_activity_calculo_imc">Calculate BMI</string>
+    <string name="lg">Login</string>
+    <string name="al">Heigth</string>
+    <string name="ps">Weight</string>
+    <string name="cl">Calculate</string>
+    <string name="lp">Clear</string>
+    <string name="em" translatable="false">Email</string>
+    <string name="sn">Password</string>
+    <string name="imc">BIM</string>
+    <string name="title_activity_conversao">Converter</string>
+    <string name="title_activity_main">Project</string>
+    <string name="cn">Convert</string>
+    <string name="cnvt">Convert to</string>
+    <string name="cnvrt">Convert</string>
+    <string name="list">List</string>
+    <string-array name="spn_produto">
+        <item>NOT PURCHASED</item>
+        <item>PURCHASED</item>
+    </string-array>
     <string-array name="tipo">
         <item>KB</item>
         <item>MB</item>
         <item>GB</item>
         <item>TB</item>
     </string-array>
-
-    <string-array name="tipoProduto">
-        <item>Comprado</item>
-        <item>Não Comprado</item>
-    </string-array>
-    <string name="title_activity_lista_de_produtos">ListaDeProdutos</string>
+    <string name="title_activity_sobre">About</string>
+    <string name="sb">About</string>
+    <string name="title_activity_lista_de_produtos">Product List</string>
+    <string name="nm">Name</string>
+    <string name="qt">Quantity</string>
+    <string name="st">Status</string>
+    <string name="dl">Delete</string>
+    <string name="sv">Save</string>
 </resources>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.edu.senac.algumascoisas">
+    package="com.edu.senac.projetinho">
 
     <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature
-        android:name="android.hardware.camera.any"
+        android:name="android.hardware.camera2.any"
         android:required="true" />
     <uses-feature
-        android:name="android.hardware.camera.autofocus"
+        android:name="android.hardware.camera2.autofocus"
         android:required="false" />
 
     <application
@@ -18,33 +18,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.produto"
-            android:label="Produtos"></activity>
+        <activity android:name=".ui.cadastroAnime"></activity>
+        <activity android:name=".ui.Anime" />
+        <activity android:name=".ui.CadastroProduto" />
         <activity
             android:name=".ui.ListaDeProdutos"
             android:label="@string/title_activity_lista_de_produtos"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.Sobre"
-            android:label="Sobre" />
+            android:label="@string/title_activity_sobre" />
         <activity
-            android:name=".ui.conversao"
-            android:label="Conversor de Bytes" />
+            android:name=".ui.Conversao"
+            android:label="@string/title_activity_conversao" />
         <activity
-            android:name=".ui.calculoimc"
-            android:label="Calculo de IMC"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".ui.CalculoIMC"
+            android:label="@string/title_activity_calculo_imc" />
         <activity
-            android:name=".ui.principal"
-            android:label="Ferramentas"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.MainActivity">
+            android:name=".ui.Principal"
+            android:label="@string/title_activity_principal" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

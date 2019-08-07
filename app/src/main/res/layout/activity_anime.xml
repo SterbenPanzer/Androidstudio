@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.edu.senac.projetinho.ui.Anime">
+
+    <TextView
+        android:id="@+id/nomeAnimeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Nome do seu anime"
+        android:textAlignment="center"
+        android:textColor="#110F0F"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imagemAnimeView"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/sinopseView"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:fontFamily="casual"
+        android:text="Sinopse :"
+        android:textAlignment="center"
+        android:textColor="#111010"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/descricaoView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Sinopse do anime retratado e escolhido." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/temporadasView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:text="Temporadas :"
+        android:textColor="#111010"
+        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/temporadasTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="6"
+            android:text="Num. de episodios"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/episodiosView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:text="Episodios :"
+        android:textColor="#111010"
+        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/episodiosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="6"
+            android:text="Num. de episodios"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/dataLView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="casual"
+        android:layout_weight="1"
+        android:text="Data de Lançamento :"
+        android:textColor="#111010"
+        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dataLTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="6"
+            android:text="Data L"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dataEView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="casual"
+            android:layout_weight="1"
+            android:text="Data de Encerramento :"
+            android:textColor="#111010"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dataETextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="6"
+            android:text="Data E"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/diretorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Diretor :"
+            android:textColor="#111010"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/diretorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="6"
+            android:text="Nome do diretor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00C853"
+            android:fontFamily="casual"
+            android:text="Updtate"
+            android:textColor="#0F0D0D" />
+
+        <Button
+            android:id="@+id/buttonMinhasNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#0091EA"
+            android:fontFamily="casual"
+            android:text="Minhas Notas"
+            android:textColor="#0F0D0D"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,6 +1,7 @@
-package com.edu.senac.algumascoisas.model;
+package com.edu.senac.projetinho.model;
 
 import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.stmt.query.In;
 import com.j256.ormlite.table.DatabaseTable;
 
 import java.io.Serializable;
@@ -11,13 +12,13 @@ public class Produto implements Serializable {
     private Integer codigo;
 
     @DatabaseField(canBeNull = false)
-    private String foto;
-
-    @DatabaseField(canBeNull = false)
     private String nome;
 
     @DatabaseField(canBeNull = false)
     private Integer quantidade;
+
+    @DatabaseField(canBeNull = false)
+    private String foto;
 
     @DatabaseField(canBeNull = false)
     private String status;
@@ -28,14 +29,6 @@ public class Produto implements Serializable {
 
     public void setCodigo(Integer codigo) {
         this.codigo = codigo;
-    }
-
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
     }
 
     public String getNome() {
@@ -52,6 +45,14 @@ public class Produto implements Serializable {
 
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public String getStatus() {
