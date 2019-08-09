@@ -18,8 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.cadastroAnime"></activity>
-        <activity android:name=".ui.AnimeDados" />
+        <activity android:name=".ui.visualizar_anime"></activity>
+        <activity android:name=".ui.ListaDeAnimes" />
+        <activity android:name=".ui.cadastroAnime" />
         <activity android:name=".ui.CadastroProduto" />
         <activity
             android:name=".ui.ListaDeProdutos"

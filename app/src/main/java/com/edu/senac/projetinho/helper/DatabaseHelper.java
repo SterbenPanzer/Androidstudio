@@ -136,4 +136,22 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             Log.e("banco", "Falha ao salvar anime");
         }
     }
+
+    public List<Anime> buscarTodosAnime() {
+        List<Anime> animes = null;
+        try {
+            return getAnimeDao().queryBuilder().query();
+        } catch (Exception e) {
+            Log.e("banco", "Falha ao buscar animes");
+        }
+        return new ArrayList<>();
+    }
+    public void updateAnime(Anime anime) {
+        try {
+            getAnimeDao().update(anime);
+        } catch (Exception e) {
+            Log.e("banco", "Falha ao atualizar anime");
+        }
+    }
+
 }

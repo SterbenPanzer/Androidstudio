@@ -34,4 +34,5 @@
     <string name="st">Status</string>
     <string name="dl">Delete</string>
     <string name="sv">Save</string>
+    <string name="title_activity_lista_de_animes">lista_de_animes</string>
 </resources>

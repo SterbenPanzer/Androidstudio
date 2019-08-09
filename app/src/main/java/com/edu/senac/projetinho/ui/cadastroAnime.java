@@ -25,6 +25,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.edu.senac.projetinho.R;
+import com.edu.senac.projetinho.helper.DatabaseHelper;
 import com.edu.senac.projetinho.model.Anime;
 import com.edu.senac.projetinho.model.Produto;
 
@@ -76,8 +77,9 @@ public class cadastroAnime extends AppCompatActivity {
             nomeAnime.setText(ani.getNome());
             temporadasAnime.setText(Integer.toString(ani.getTemporada()));
             episodiosAnime.setText(Integer.toString(ani.getEpisodios()));
-            dataLAnime.setText(date2.format(dataLAnime));
-            dataEAnime.setText(date2.format(dataEAnime));
+            sinopseAnime.setText(ani.getDescricao());
+            dataLAnime.setText(date2.format(ani.getDataL()));
+            dataEAnime.setText(date2.format(ani.getDataE()));
             diretorAnime.setText(ani.getDiretor());
         } else {
             btnDeletarAnime.setVisibility(View.GONE);
@@ -150,18 +152,36 @@ public class cadastroAnime extends AppCompatActivity {
     public void salvarAnime(View view) throws ParseException {
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
 
-
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
         String mensagem = validarCamposAnime();
 
-        Anime anime = new Anime();
-        anime.setFoto(getImagem());
-        anime.setNome(nomeAnime.getText().toString());
-        anime.setDescricao(sinopseAnime.getText().toString());
-        anime.setTemporada(Integer.parseInt(temporadasAnime.getText().toString()));
-        anime.setEpisodios(Integer.parseInt(episodiosAnime.getText().toString()));
-        anime.setDiretor(diretorAnime.getText().toString());
-        anime.setDataL(formatter.parse(dataLAnime.getText().toString()));
-        anime.setDataE(formatter.parse(dataEAnime.getText().toString()));
+        if (ani == null) {
+
+            Anime anime = new Anime();
+            anime.setFoto(getImagem());
+            anime.setNome(nomeAnime.getText().toString());
+            anime.setDescricao(sinopseAnime.getText().toString());
+            anime.setTemporada(Integer.parseInt(temporadasAnime.getText().toString()));
+            anime.setEpisodios(Integer.parseInt(episodiosAnime.getText().toString()));
+            anime.setDiretor(diretorAnime.getText().toString());
+            anime.setDataL(formatter.parse(dataLAnime.getText().toString()));
+            anime.setDataE(formatter.parse(dataEAnime.getText().toString()));
+
+            databaseHelper.salvarAnime(anime);
+        }else{
+            ani.setFoto(getImagem());
+            ani.setNome(nomeAnime.getText().toString());
+            ani.setDescricao(sinopseAnime.getText().toString());
+            ani.setTemporada(Integer.parseInt(temporadasAnime.getText().toString()));
+            ani.setEpisodios(Integer.parseInt(episodiosAnime.getText().toString()));
+            ani.setDiretor(diretorAnime.getText().toString());
+            ani.setDataL(formatter.parse(dataLAnime.getText().toString()));
+            ani.setDataE(formatter.parse(dataEAnime.getText().toString()));
+
+            databaseHelper.updateAnime(ani);
+        }
+
+        finish();
 
     }
 

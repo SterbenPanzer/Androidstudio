@@ -222,6 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
                 android:onClick="salvarAnime"
                 android:layout_weight="1"
                 android:backgroundTint="#64DD17"

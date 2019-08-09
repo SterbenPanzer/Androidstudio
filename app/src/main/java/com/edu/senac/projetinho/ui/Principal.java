@@ -51,8 +51,8 @@ public class Principal extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void irParaCadastroAnime(View v) {
-        Intent i = new Intent(this, cadastroAnime.class);
+    public void irParaListaAnime(View v) {
+        Intent i = new Intent(this, ListaDeAnimes.class);
         startActivity(i);
     }
 }

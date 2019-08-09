@@ -56,7 +56,7 @@
         android:layout_margin="20dp"
         android:background="#008577"
         android:fontFamily="sans-serif"
-        android:onClick="irParaCadastroAnime"
+        android:onClick="irParaListaAnime"
         android:text="MyANotes"
         android:textColor="#ffffff"
         android:textSize="30sp"
